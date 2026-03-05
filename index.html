@@ -1,32 +1,404 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alyamama:wght@300..900&family=Dancing+Script:wght@400..700&family=Gravitas+One&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+KR:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playpen+Sans+Hebrew:wght@100..800&family=Playwrite+NZ+Basic:wght@100..400&family=Princess+Sofia&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Trip Nova | vansh</title>
-  </head>
-  <body>
-    <!-- -------hero-section--- -->
-    <section class="hero-section">
-      <!-- ---nav-bar-top--- -->
-      <nav id="home">
-        <div class="logo">
-          <h1>
-            <i class="fa-solid fa-truck-plane"></i> Trip
-            <span style="color: blue">Nova </span>
-          </h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alyamama:wght@300..900&family=Dancing+Script:wght@400..700&family=Gravitas+One&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+KR:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playpen+Sans+Hebrew:wght@100..800&family=Playwrite+NZ+Basic:wght@100..400&family=Princess+Sofia&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
+  <title>Trip Nova | vansh</title>
+</head>
+
+<body>
+  <!-- -------hero-section--- -->
+  <section class="hero-section">
+    <!-- ---nav-bar-top--- -->
+    <nav id="home">
+      <div class="logo">
+        <h1>
+          <i class="fa-solid fa-truck-plane"></i> Trip
+          <span style="color: blue">Nova </span>
+        </h1>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Tour">Tours</a></li>
+        <li><a href="#Destinations">Destinations</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- ------hero-tittle---- -->
+    <div class="hero-tittle">
+      <div class="hero-details">
+        <h1>Explore The World With TripNova</h1>
+        <p>
+          Discover beautiful destinations, amazing tours, and unforgettable
+          adventures around the world.
+        </p>
+        <div class="btn-group">
+          <a href="#"><button class="explorebtn">Explore Tours</button></a>
+          <a href="#"><button class="vediobtn">Watch Video</button></a>
         </div>
+      </div>
+    </div>
+  </section>
+  <div class="line"></div>
+
+  <!-- -------Tour Card section----- -->
+  <section class="tours-section" id="Tour">
+    <h1>POPULAR TOURS</h1>
+    <!--card conatiner-->
+    <div class="card-container">
+      <!--card 1-->
+      <div class="tour-card">
+        <video autoplay muted loop>
+          <source src="assits/rishikesh.mp4" type="video/mp4" />
+        </video>
+
+        <div class="card-overlay">
+          <h3>Rishikesh</h3>
+          <p>
+            Experience the divine beauty of the Himalayas and sacred temples.
+          </p>
+          <button>Explore More</button>
+        </div>
+      </div>
+
+      <!--card 2-->
+      <div class="tour-card">
+        <video autoplay muted loop>
+          <source src="assits/Goa.mp4" type="video/mp4" />
+        </video>
+
+        <div class="card-overlay">
+          <h3>GOA</h3>
+          <p>
+            Experience the divine beauty of the Himalayas and sacred temples.
+          </p>
+          <button>Explore More</button>
+        </div>
+      </div>
+
+      <!--card 3-->
+      <div class="tour-card">
+        <video autoplay muted loop>
+          <source src="assits/kashmirvedio.mp4" type="video/mp4" />
+        </video>
+
+        <div class="card-overlay">
+          <h3>Kashmir</h3>
+          <p>
+            Experience the divine beauty of the Himalayas and sacred temples.
+          </p>
+          <button>Explore More</button>
+        </div>
+      </div>
+
+      <!--card 4-->
+      <div class="tour-card">
+        <video autoplay muted loop>
+          <source src="assits/manali.mp4" type="video/mp4" />
+        </video>
+
+        <div class="card-overlay">
+          <h3>Manali</h3>
+          <p>
+            Experience the divine beauty of the Himalayas and sacred temples.
+          </p>
+          <button>Explore More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="line"></div>
+  <!--Destination section-->
+
+  <section class="destinations-section">
+    <div class="destination-header">
+      <h2>Top National destinations </h2>
+      <p>Explore the most beautiful places in India</p>
+    </div>
+
+    <!--card k liye container-->
+    <div class="destination-container" id="Destinations">
+      <!--card 1-->
+      <div class="destination-card">
+        <h1>Rishikesh</h1>
+        <div class="card-foot">
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>UttaraKhand, India
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: yellow"></i> 4.8
+              Rating
+            </li>
+            <li><i class="fa-solid fa-indian-rupee-sign"></i>4,999/Trip</li>
+          </ul>
+          <a href="#"><button class="ExploreMorebtn">Explore More</button></a>
+        </div>
+      </div>
+      <!--Card 2-->
+      <div class="destination-card">
+        <h1 style="padding-left: 25px">Kashmir</h1>
+        <div class="card-foot">
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>UttaraKhand, India
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: yellow"></i> 4.8
+              Rating
+            </li>
+            <li><i class="fa-solid fa-indian-rupee-sign"></i>4,999/Trip</li>
+          </ul>
+          <a href="#"><button class="ExploreMorebtn">Explore More</button></a>
+        </div>
+      </div>
+
+      <!--Card 2-->
+      <div class="destination-card">
+        <h1>Rishikesh</h1>
+        <div class="card-foot">
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>UttaraKhand, India
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: yellow"></i> 4.8
+              Rating
+            </li>
+            <li><i class="fa-solid fa-indian-rupee-sign"></i>4,999/Trip</li>
+          </ul>
+          <a href="#"><button class="ExploreMorebtn">Explore More</button></a>
+        </div>
+      </div>
+
+      <!--Card 2-->
+      <div class="destination-card">
+        <h1>Rishikesh</h1>
+        <div class="card-foot">
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>UttaraKhand, India
+            </li>
+            <li>
+              <i class="fa-solid fa-star" style="color: yellow"></i> 4.8
+              Rating
+            </li>
+            <li><i class="fa-solid fa-indian-rupee-sign"></i>4,999/Trip</li>
+          </ul>
+          <a href="#"><button class="ExploreMorebtn">Explore More</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="line"></div>
+
+  <!--Rishikesh destination section-->
+  <section class="Manali-top-location">
+    <div class="hedline">
+      <h1>Best Tours of Manali</h1>
+    </div>
+    <div class="manali-card-container">
+      <!-- ---card 1---- -->
+      <div class="manaili-card">
+
+        <img src="https://i.pinimg.com/1200x/45/e5/83/45e583fbc1d4c327576449b49bdb018b.jpg" alt="">
+
+        <div class="manali-card-tittle">
+          <h2>Solang Vallery</h2>
+          <p>Best tourest fun palace most snow in Solang Vallery</p>
+        </div>
+
+        <div class="manali-card-details">
+          <span>
+            <p>Destination</p>
+            <p>Person</p>
+          </span>
+          <span>
+            <select name="" id="">
+              <option value="1">Day 1</option>
+              <option value="1">Day 2</option>
+            </select>
+            <select name="" id="">
+              <option value="1">Person 1</option>
+              <option value="1">Person 2</option>
+            </select>
+          </span>
+          <h2 class="Price">Price <i class="fa-solid fa-indian-rupee-sign"></i><span id="Price">1200.00</span></h2>
+          <button id="bookNowBtn">Book Now</button>
+        </div>
+      </div>
+
+        <!-- ---card 2---- -->
+      <div class="manaili-card">
+
+        <img src="https://i.pinimg.com/1200x/45/e5/83/45e583fbc1d4c327576449b49bdb018b.jpg" alt="">
+
+        <div class="manali-card-tittle">
+          <h2>Solang Vallery</h2>
+          <p>Best tourest fun palace most snow in Solang Vallery</p>
+        </div>
+
+        <div class="manali-card-details">
+          <span>
+            <p>Destination</p>
+            <p>Person</p>
+          </span>
+          <span>
+            <select name="" id="">
+              <option value="1">Day 1</option>
+              <option value="1">Day 2</option>
+            </select>
+            <select name="" id="">
+              <option value="1">Person 1</option>
+              <option value="1">Person 2</option>
+            </select>
+          </span>
+          <h2 class="Price">Price <i class="fa-solid fa-indian-rupee-sign"></i><span id="Price">1200.00</span></h2>
+          <button id="bookNowBtn">Book Now</button>
+        </div>
+      </div>
+
+        <!-- ---card 3---- -->
+      <div class="manaili-card">
+
+        <img src="https://i.pinimg.com/1200x/45/e5/83/45e583fbc1d4c327576449b49bdb018b.jpg" alt="">
+
+        <div class="manali-card-tittle">
+          <h2>Solang Vallery</h2>
+          <p>Best tourest fun palace most snow in Solang Vallery</p>
+        </div>
+
+        <div class="manali-card-details">
+          <span>
+            <p>Destination</p>
+            <p>Person</p>
+          </span>
+          <span>
+            <select name="" id="">
+              <option value="1">Day 1</option>
+              <option value="1">Day 2</option>
+            </select>
+            <select name="" id="">
+              <option value="1">Person 1</option>
+              <option value="1">Person 2</option>
+            </select>
+          </span>
+          <h2 class="Price">Price <i class="fa-solid fa-indian-rupee-sign"></i><span id="Price">1200.00</span></h2>
+          <button id="bookNowBtn">Book Now</button>
+        </div>
+      </div>
+
+             <!-- ---card 4---- -->
+      <div class="manaili-card">
+
+        <img src="https://i.pinimg.com/1200x/45/e5/83/45e583fbc1d4c327576449b49bdb018b.jpg" alt="">
+
+        <div class="manali-card-tittle">
+          <h2>Solang Vallery</h2>
+          <p>Best tourest fun palace most snow in Solang Vallery</p>
+        </div>
+
+        <div class="manali-card-details">
+          <span>
+            <p>Destination</p>
+            <p>Person</p>
+          </span>
+          <span>
+            <select name="" id="">
+              <option value="1">Day 1</option>
+              <option value="1">Day 2</option>
+            </select>
+            <select name="" id="">
+              <option value="1">Person 1</option>
+              <option value="1">Person 2</option>
+            </select>
+          </span>
+          <h2 class="Price">Price <i class="fa-solid fa-indian-rupee-sign"></i><span id="Price">1200.00</span></h2>
+          <button id="bookNowBtn">Book Now</button>
+        </div>
+      </div>
+    </div>
+
+           <!-- ---card 5---- -->
+      <div class="manaili-card">
+
+        <img src="https://i.pinimg.com/1200x/45/e5/83/45e583fbc1d4c327576449b49bdb018b.jpg" alt="">
+
+        <div class="manali-card-tittle">
+          <h2>Solang Vallery</h2>
+          <p>Best tourest fun palace most snow in Solang Vallery</p>
+        </div>
+
+        <div class="manali-card-details">
+          <span>
+            <p>Destination</p>
+            <p>Person</p>
+          </span>
+          <span>
+            <select name="" id="">
+              <option value="1">Day 1</option>
+              <option value="1">Day 2</option>
+            </select>
+            <select name="" id="">
+              <option value="1">Person 1</option>
+              <option value="1">Person 2</option>
+            </select>
+          </span>
+          <h2 class="Price">Price <i class="fa-solid fa-indian-rupee-sign"></i><span id="Price">1200.00</span></h2>
+          <button id="bookNowBtn">Book Now</button>
+        </div>
+      </div>
+  </section>
+  <!--footer -->
+  <section class="footer-section">
+    <div class="footer-head">
+      <h1> <i class="fa-solid fa-plane-lock"></i>NovaTrip</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing vansh verma elit.
+        <br />
+        Sit dolorem officiis pariatur? Officiis exercitationem!
+      </p>
+    </div>
+
+    <footer>
+      <div class="national-trip-link links">
+        <h1>Top Destinations in India</h1>
+        <ul>
+          <li><a href="#">Rishikesh</a></li>
+          <li><a href="#">Goa</a></li>
+          <li><a href="#">Manali</a></li>
+          <li><a href="#">Kashmir</a></li>
+          <li><a href="#">Jaipur</a></li>
+          <li><a href="#">Himachal pradesh</a></li>
+        </ul>
+      </div>
+      <div class="interbational-trip-link links">
+        <h1>Popular interbational Trips</h1>
+        <ul>
+          <li><a href="#">Dubai</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Singapore</a></li>
+          <li><a href="#">Bali</a></li>
+          <li><a href="#">Madlives</a></li>
+          <li><a href="#">Canada</a></li>
+        </ul>
+      </div>
+      <div class="quick-link links">
+        <h1>Quick Links</h1>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#Tour">Tours</a></li>
@@ -35,260 +407,44 @@
           <li><a href="#">Reviews</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <div class="menu-btn">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </nav>
-
-      <!-- ------hero-tittle---- -->
-      <div class="hero-tittle">
-        <div class="hero-details">
-          <h1>Explore The World With TripNova</h1>
-          <p>
-            Discover beautiful destinations, amazing tours, and unforgettable
-            adventures around the world.
-          </p>
-          <div class="btn-group">
-            <a href="#"><button class="explorebtn">Explore Tours</button></a>
-            <a href="#"><button class="vediobtn">Watch Video</button></a>
-          </div>
-        </div>
       </div>
-    </section>
-    <div class="line"></div>
-
-    <!-- -------Tour Card section----- -->
-    <section class="tours-section" id="Tour">
-      <h1>POPULAR TOURS</h1>
-      <!--card conatiner-->
-      <div class="card-container">
-        <!--card 1-->
-        <div class="tour-card">
-          <video autoplay muted loop>
-            <source src="assits/rishikesh.mp4" type="video/mp4" />
-          </video>
-
-          <div class="card-overlay">
-            <h3>Rishikesh</h3>
-            <p>
-              Experience the divine beauty of the Himalayas and sacred temples.
-            </p>
-            <button>Explore More</button>
-          </div>
-        </div>
-
-        <!--card 2-->
-        <div class="tour-card">
-          <video autoplay muted loop>
-            <source src="assits/Goa.mp4" type="video/mp4" />
-          </video>
-
-          <div class="card-overlay">
-            <h3>GOA</h3>
-            <p>
-              Experience the divine beauty of the Himalayas and sacred temples.
-            </p>
-            <button>Explore More</button>
-          </div>
-        </div>
-
-        <!--card 3-->
-        <div class="tour-card">
-          <video autoplay muted loop>
-            <source src="assits/kashmirvedio.mp4" type="video/mp4" />
-          </video>
-
-          <div class="card-overlay">
-            <h3>Kashmir</h3>
-            <p>
-              Experience the divine beauty of the Himalayas and sacred temples.
-            </p>
-            <button>Explore More</button>
-          </div>
-        </div>
-
-        <!--card 4-->
-        <div class="tour-card">
-          <video autoplay muted loop>
-            <source src="assits/manali.mp4" type="video/mp4" />
-          </video>
-
-          <div class="card-overlay">
-            <h3>Manali</h3>
-            <p>
-              Experience the divine beauty of the Himalayas and sacred temples.
-            </p>
-            <button>Explore More</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="line"></div>
-    <!--Destination section-->
-
-    <section class="destinations-section">
-      <div class="destination-header">
-        <h2>Popular Destinations</h2>
-        <p>Explore the most beautiful places in India</p>
-      </div>
-
-      <!--card k liye container-->
-      <div class="destination-container" id="Destinations">
-        <!--card 1-->
-        <div class="destination-card">
-          <h1>Rishikesh</h1>
-          <div class="card-foot">
-            <ul>
-              <li>
-                <i class="fa-solid fa-location-dot"></i>UttaraKhand, India
-              </li>
-              <li>
-                <i class="fa-solid fa-star" style="color: yellow"></i> 4.8
-                Rating
-              </li>
-              <li><i class="fa-solid fa-indian-rupee-sign"></i>4,999/Trip</li>
-            </ul>
-            <a href="#"><button class="ExploreMorebtn">Explore More</button></a>
-          </div>
-        </div>
-        <!--Card 2-->
-        <div class="destination-card">
-          <h1 style="padding-left: 25px">Kashmir</h1>
-          <div class="card-foot">
-            <ul>
-              <li>
-                <i class="fa-solid fa-location-dot"></i>UttaraKhand, India
-              </li>
-              <li>
-                <i class="fa-solid fa-star" style="color: yellow"></i> 4.8
-                Rating
-              </li>
-              <li><i class="fa-solid fa-indian-rupee-sign"></i>4,999/Trip</li>
-            </ul>
-            <a href="#"><button class="ExploreMorebtn">Explore More</button></a>
-          </div>
-        </div>
-
-        <!--Card 2-->
-        <div class="destination-card">
-          <h1>Rishikesh</h1>
-          <div class="card-foot">
-            <ul>
-              <li>
-                <i class="fa-solid fa-location-dot"></i>UttaraKhand, India
-              </li>
-              <li>
-                <i class="fa-solid fa-star" style="color: yellow"></i> 4.8
-                Rating
-              </li>
-              <li><i class="fa-solid fa-indian-rupee-sign"></i>4,999/Trip</li>
-            </ul>
-            <a href="#"><button class="ExploreMorebtn">Explore More</button></a>
-          </div>
-        </div>
-
-        <!--Card 2-->
-        <div class="destination-card">
-          <h1>Rishikesh</h1>
-          <div class="card-foot">
-            <ul>
-              <li>
-                <i class="fa-solid fa-location-dot"></i>UttaraKhand, India
-              </li>
-              <li>
-                <i class="fa-solid fa-star" style="color: yellow"></i> 4.8
-                Rating
-              </li>
-              <li><i class="fa-solid fa-indian-rupee-sign"></i>4,999/Trip</li>
-            </ul>
-            <a href="#"><button class="ExploreMorebtn">Explore More</button></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="line"></div>
-
-    <!--footer -->
-    <section class="footer-section">
-      <div class="footer-head">
-        <h1> <i class="fa-solid fa-plane-lock"></i>NovaTrip</h1>
+      <div class="subscripe">
+        <h1>Subscribe Our Newsletter</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing vansh verma elit.
-          <br />
-          Sit dolorem officiis pariatur? Officiis exercitationem!
+          Subscribe to receiver our batter <br />
+          travel update and offers.
         </p>
+        <div class="input-box">
+          <input type="email" id="input" placeholder="Enter your email" />
+          <button class="subscripebtn">Subscripe</button>
+        </div>
+        <div class="social-link">
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+          </ul>
+        </div>
       </div>
+      </div>
+    </footer>
+    <div class="copy-footer">
+      <p>&copy; 2026 Trip Nova. All rights reserved</p>
+      <div class="privacy-links">
+        <a href="#">Privacy Policy</a>
+        <hr>
+        <a href="#"> Terms & condition</a>
+      </div>
+  </section>
+</body>
+<script>
+  const menuBtn = document.querySelector(".menu-btn");
+  const navLinks = document.querySelector("nav ul");
 
-      <footer>
-        <div class="national-trip-link links">
-          <h1>Top Destinations in India</h1>
-          <ul>
-            <li><a href="#">Rishikesh</a></li>
-            <li><a href="#">Goa</a></li>
-            <li><a href="#">Manali</a></li>
-            <li><a href="#">Kashmir</a></li>
-            <li><a href="#">Jaipur</a></li>
-            <li><a href="#">Himachal pradesh</a></li>
-          </ul>
-        </div>
-        <div class="interbational-trip-link links">
-          <h1>Popular interbational Trips</h1>
-          <ul>
-            <li><a href="#">Dubai</a></li>
-            <li><a href="#">Paris</a></li>
-            <li><a href="#">Singapore</a></li>
-            <li><a href="#">Bali</a></li>
-            <li><a href="#">Madlives</a></li>
-            <li><a href="#">Canada</a></li>
-          </ul>
-        </div>
-        <div class="quick-link links">
-          <h1>Quick Links</h1>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#Tour">Tours</a></li>
-            <li><a href="#Destinations">Destinations</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="subscripe">
-          <h1>Subscribe Our Newsletter</h1>
-          <p>
-            Subscribe to receiver our batter <br />
-            travel update and offers.
-          </p>
-          <div class="input-box">
-            <input type="email" id="input" placeholder="Enter your email" />
-            <button class="subscripebtn">Subscripe</button>
-          </div>
-          <div class="social-link">
-            <ul>
-              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        </div>
-      </footer>
-      <div class="copy-footer">
-         <p>&copy; 2026 Trip Nova. All rights reserved</p>
-         <div class="privacy-links">
-          <a href="#">Privacy Policy</a>
-          <hr>
-          <a href="#"> Terms & condition</a>
-         </div>
-    </section>
-  </body>
-  <script>
-    const menuBtn = document.querySelector(".menu-btn");
-    const navLinks = document.querySelector("nav ul");
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
 
-    menuBtn.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  </script>
 </html>
