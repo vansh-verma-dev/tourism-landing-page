@@ -3,10 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
+.line {
+  height: 5px;
+ 
+  background-color: gray;
+}
 body {
   width: 100%;
-  background: black;
+    background: url("https://i.pinimg.com/1200x/cf/da/47/cfda47ff676eacb750a1f84c870fdc10.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: sans-serif;
 }
 
@@ -17,21 +27,29 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 10vh;
 }
 
 /*----NAVBAR------- */
 
 nav {
-  height: 10vh;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 10vh;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 8%;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(6px);
+
+  background: rgba(0,0,0,0.4); 
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  position: relative;
+
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+
 }
 
 .logo h1 {
@@ -81,16 +99,21 @@ nav ul li a:hover {
 }
 
 .hero-details {
-  max-width: 700px;
+  width: 100%;
 }
 
 .hero-tittle h1 {
-  font-size: 65px;
+  font-family: "Lobster Two", cursive;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  font-size: 85px;
 }
 
 .hero-tittle p {
-  font-size: 20px;
+  font-size: 23px;
   margin-top: 15px;
+  font-family: "IBM Plex Sans Condensed";
 }
 
 .hero-tittle a .explorebtn {
@@ -123,10 +146,7 @@ nav ul li a:hover {
 .hero-tittle a button:hover {
   background: rgba(0, 0, 0, 0.4);
 }
-.line{
-  height: 5px;
-  color: gray;
-}
+
 .tours-section {
   position: relative;
   height: 80vh;
@@ -143,23 +163,28 @@ nav ul li a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   filter: blur(3px);
-  transform: scale(1.1); 
+  transform: scale(1.1);
   z-index: -1;
 }
-.tours-section h1{
+.tours-section h1 {
+  color: rgb(94, 94, 94);
   margin-top: 10px;
   font-size: 40px;
+  font-family: "Ubuntu";
   text-align: center;
 }
-.card-container{
+.card-container {
   height: 90%;
   overflow-x: scroll;
   display: flex;
   padding: 10px;
   justify-content: space-evenly;
- 
 }
-.tour-card{
+.card-container::-webkit-scrollbar{
+  background-color: transparent;
+  color: orange;
+}
+.tour-card {
   width: 300px;
   height: 400px;
   position: relative;
@@ -168,7 +193,7 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-.tour-card video{
+.tour-card video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -177,7 +202,7 @@ nav ul li a:hover {
 
 /* overlay */
 
-.card-overlay{
+.card-overlay {
   position: absolute;
   inset: 0;
 
@@ -193,20 +218,20 @@ nav ul li a:hover {
   opacity: 0;
   transition: 0.5s;
 
-  background: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
 
-.card-overlay h3{
+.card-overlay h3 {
   font-size: 28px;
   margin-bottom: 10px;
 }
 
-.card-overlay p{
+.card-overlay p {
   font-size: 14px;
   margin-bottom: 20px;
 }
 
-.card-overlay button{
+.card-overlay button {
   padding: 10px 18px;
   border: none;
   background: white;
@@ -217,16 +242,140 @@ nav ul li a:hover {
 
 /* hover */
 
-.tour-card:hover video{
+.tour-card:hover video {
   filter: blur(4px);
   transform: scale(1.1);
 }
 
-.tour-card:hover .card-overlay{
+.tour-card:hover .card-overlay {
   opacity: 1;
 }
 
+.destinations-section {
+  padding-top: 20px;
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
 
+.destinations-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://i.pinimg.com/1200x/1a/fd/7e/1afd7e13dbf0abca0393fdfadd9487b6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+  transform: scale(1.1);
+  z-index: -1;
+}
+
+.destination-header {
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+}
+
+.destination-header h2 {
+  font-size: 42px;
+  font-weight: 600;
+  color: rgb(48, 48, 48);
+}
+
+.destination-header p {
+  font-size: 14px;
+  color: rgb(48, 48, 48);
+  letter-spacing: 1px;
+}
+
+.destination-container {
+  margin-top: 10px;
+  width: 100%;
+  height: 84%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.destination-card {
+  background: url("https://i.pinimg.com/1200x/86/03/b8/8603b8c4492bc7b0cdc5c15f453d5474.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid white;
+  position: relative;
+}
+.destination-card:nth-child(2){
+  background: url('https://i.pinimg.com/736x/6e/8c/2b/6e8c2b51a38acab4fb36be65a7f73b93.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.destination-card:nth-child(3){
+  background: url('https://i.pinimg.com/736x/a6/74/f4/a674f407d8af1d8987e6599c0e51d5bc.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.destination-card:nth-child(4){
+  background: url('https://i.pinimg.com/736x/ac/65/74/ac6574e76fca7637812412ec4a65811e.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.destination-card h1 {
+  margin-top: 5px;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  color: white;
+  font-size: 32px;
+}
+.card-foot {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.589);
+}
+.card-foot ul li {
+  list-style: none;
+  padding: 5px;
+  color: white;
+  font-size: 18px;
+}
+.card-foot ul li:nth-child(2) {
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+}
+.card-foot button {
+  margin-left: 10px;
+  width: 90%;
+  height: 40px;
+  margin-bottom: 10px;
+  border: none;
+  color: white;
+  background-color: rgba(7, 7, 104, 0.74);
+}
+@media (max-width: 768px) {
+  .destination-container {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 cards per row on tablets & mobile */
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .destination-container {
+    grid-template-columns: 1fr; /* 1 card per row on small mobile screens */
+  }
+}
 /* ---tablte resonsive--- */
 
 @media (max-width: 900px) {
@@ -238,8 +387,6 @@ nav ul li a:hover {
     font-size: 18px;
   }
 }
-
-
 
 /* ---mobile responsive--- */
 
@@ -286,4 +433,3 @@ nav ul li a:hover {
     width: 130px;
   }
 }
-

@@ -8,13 +8,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alyamama:wght@300..900&family=Dancing+Script:wght@400..700&family=Gravitas+One&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+KR:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playpen+Sans+Hebrew:wght@100..800&family=Playwrite+NZ+Basic:wght@100..400&family=Princess+Sofia&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Trip Nova | vansh</title>
   </head>
   <body>
     <!-- -------hero-section--- -->
     <section class="hero-section">
       <!-- ---nav-bar-top--- -->
-      <nav>
+      <nav id="home">
         <div class="logo">
           <h1>
             <i class="fa-solid fa-truck-plane"></i> Trip
@@ -22,9 +28,9 @@
           </h1>
         </div>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Destinations</a></li>
-          <li><a href="#">Tours</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#Tour">Tours</a></li>
+          <li><a href="#Destinations">Destinations</a></li>
           <li><a href="#">Gallery</a></li>
           <li><a href="#">Reviews</a></li>
           <li><a href="#">Contact</a></li>
@@ -50,8 +56,9 @@
       </div>
     </section>
     <div class="line"></div>
+
     <!-- -------Tour Card section----- -->
-    <section class="tours-section">
+    <section class="tours-section" id="Tour">
       <h1>POPULAR TOURS</h1>
       <!--card conatiner-->
       <div class="card-container">
@@ -72,8 +79,7 @@
 
         <!--card 2-->
         <div class="tour-card">
-
-            <video autoplay muted loop>
+          <video autoplay muted loop>
             <source src="assits/Goa.mp4" type="video/mp4" />
           </video>
 
@@ -88,7 +94,7 @@
 
         <!--card 3-->
         <div class="tour-card">
-            <video autoplay muted loop>
+          <video autoplay muted loop>
             <source src="assits/kashmirvedio.mp4" type="video/mp4" />
           </video>
 
@@ -103,7 +109,7 @@
 
         <!--card 4-->
         <div class="tour-card">
-            <video autoplay muted loop>
+          <video autoplay muted loop>
             <source src="assits/manali.mp4" type="video/mp4" />
           </video>
 
@@ -116,6 +122,70 @@
           </div>
         </div>
       </div>
+    </section>
+  <div class="line"></div>
+    <!--Destination section-->
+
+    <section class="destinations-section">
+     <div class="destination-header">
+  <h2>Popular Destinations</h2>
+  <p>Explore the most beautiful places in India</p>
+</div>
+
+<!--card k liye container-->
+<div class="destination-container" id="Destinations">
+
+  <!--card 1-->
+  <div class="destination-card">
+      <h1>Rishikesh</h1>
+      <div class="card-foot">
+       <ul>
+         <li><i class="fa-solid fa-location-dot"></i>UttaraKhand, India</li>
+        <li><i class="fa-solid fa-star" style="color: yellow;"></i> 4.8 Rating</li>
+        <li><i class="fa-solid fa-indian-rupee-sign"></i>4,999/Trip</li>
+       </ul>
+       <a href="#"><button class="ExploreMorebtn">Explore More</button></a>
+      </div>
+  </div>
+  <!--Card 2-->
+  <div class="destination-card">
+      <h1 style="padding-left: 25px;">Kashmir</h1>
+      <div class="card-foot">
+       <ul>
+         <li><i class="fa-solid fa-location-dot"></i>UttaraKhand, India</li>
+        <li><i class="fa-solid fa-star" style="color: yellow;"></i> 4.8 Rating</li>
+        <li><i class="fa-solid fa-indian-rupee-sign"></i>4,999/Trip</li>
+       </ul>
+       <a href="#"><button class="ExploreMorebtn">Explore More</button></a>
+      </div>
+  </div>
+
+    <!--Card 2-->
+  <div class="destination-card">
+      <h1>Rishikesh</h1>
+      <div class="card-foot">
+       <ul>
+         <li><i class="fa-solid fa-location-dot"></i>UttaraKhand, India</li>
+        <li><i class="fa-solid fa-star" style="color: yellow;"></i> 4.8 Rating</li>
+        <li><i class="fa-solid fa-indian-rupee-sign"></i>4,999/Trip</li>
+       </ul>
+       <a href="#"><button class="ExploreMorebtn">Explore More</button></a>
+      </div>
+  </div>
+
+    <!--Card 2-->
+  <div class="destination-card">
+      <h1>Rishikesh</h1>
+      <div class="card-foot">
+       <ul>
+         <li><i class="fa-solid fa-location-dot"></i>UttaraKhand, India</li>
+        <li><i class="fa-solid fa-star" style="color: yellow;"></i> 4.8 Rating</li>
+        <li><i class="fa-solid fa-indian-rupee-sign"></i>4,999/Trip</li>
+       </ul>
+       <a href="#"><button class="ExploreMorebtn">Explore More</button></a>
+      </div>
+  </div>
+</div>
     </section>
   </body>
   <script>
