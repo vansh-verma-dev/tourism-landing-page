@@ -123,6 +123,109 @@ nav ul li a:hover {
 .hero-tittle a button:hover {
   background: rgba(0, 0, 0, 0.4);
 }
+.line{
+  height: 5px;
+  color: gray;
+}
+.tours-section {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.tours-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://i.pinimg.com/1200x/1a/fd/7e/1afd7e13dbf0abca0393fdfadd9487b6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+  transform: scale(1.1); 
+  z-index: -1;
+}
+.tours-section h1{
+  margin-top: 10px;
+  font-size: 40px;
+  text-align: center;
+}
+.card-container{
+  height: 90%;
+  overflow-x: scroll;
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+ 
+}
+.tour-card{
+  width: 300px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.tour-card video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+/* overlay */
+
+.card-overlay{
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+  padding: 20px;
+
+  opacity: 0;
+  transition: 0.5s;
+
+  background: rgba(0,0,0,0.3);
+}
+
+.card-overlay h3{
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.card-overlay p{
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.card-overlay button{
+  padding: 10px 18px;
+  border: none;
+  background: white;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* hover */
+
+.tour-card:hover video{
+  filter: blur(4px);
+  transform: scale(1.1);
+}
+
+.tour-card:hover .card-overlay{
+  opacity: 1;
+}
+
 
 /* ---tablte resonsive--- */
 
@@ -135,6 +238,8 @@ nav ul li a:hover {
     font-size: 18px;
   }
 }
+
+
 
 /* ---mobile responsive--- */
 
@@ -181,50 +286,4 @@ nav ul li a:hover {
     width: 130px;
   }
 }
-
-.tours-section{
-  height:80vh;
-  width:100%;
-  position:relative;
-  overflow:hidden;
-}
-
-.tours-section::before{
-  content:"";
-  position:absolute;
-  top:0;
-  left:0;
-  height:100%;
-  width:100%;
-  background:url("https://i.pinimg.com/736x/3b/f4/a8/3bf4a86ab50547f47aef75d637b74e2a.jpg");
-  background-position:center;
-  background-size:cover;
-  background-repeat:no-repeat;
-
-  filter:blur(2px);
-  transform:scale(1.1); 
-}
-
-.tours-section *{
-  position:relative;
-  z-index:2;
-}
-
-.line{
-    width: 100%;
-    color: rgb(68, 68, 68);
-    height: 3px;
-}
-.tours-section h1{
-    text-align: center;
-    margin-top: 20px;
-    color: rgb(57, 49, 65);
-}
-.card-container{
-    padding: 20px;
-    margin-top: 10px;
-    height: 70vh;
-    overflow-x: scroll;
-}
-
 
