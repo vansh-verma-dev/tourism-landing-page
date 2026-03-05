@@ -361,20 +361,71 @@ nav ul li a:hover {
   color: white;
   background-color: rgba(7, 7, 104, 0.74);
 }
-@media (max-width: 768px) {
-  .destination-container {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* 2 cards per row on tablets & mobile */
-    gap: 15px;
-  }
+
+.footer-section {
+  padding-top: 20px;
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
 }
 
-@media (max-width: 480px) {
-  .destination-container {
-    grid-template-columns: 1fr; /* 1 card per row on small mobile screens */
-  }
+.footer-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: url("https://i.pinimg.com/736x/26/c3/5e/26c35e6583a9eefec60c9d40f6bc49f8.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  filter: blur(3px);
+  transform: scale(1.1);
+  z-index: -1;
+}
+
+.footer-head{
+  padding: 20px;
+}
+.footer-head h1{
+  color: white;
+  font-size: 40px;
+}
+.footer-head p{
+  font-size: 20px;
+  color: white;
+}
+footer{
+  padding: 10px;
+  width: 100%;
+  height: 65%;
+  background-color: rgba(0, 0, 0, 0.336);
+  display: flex;
+  justify-content: space-evenly;
+}
+.links{
+  width: 22vw;
+}
+.links h1{
+  font-size: 22px;
+  color: white;
+  margin-bottom: 10px;
+}
+.links ul li{
+ padding-left: 10px;
+ padding-top: 7px;
+  list-style: none;
+}
+.links ul li a{
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+}
+.links ul li a:hover{
+  padding-left: 15px;
 }
 /* ---tablte resonsive--- */
 
