@@ -8,7 +8,7 @@ Perfect for practicing **frontend development** and creating a **professional po
 ---
 
 ##  Live Demo
-
+link=>  https://landingpage-kfyq.onrender.com
  
 
 ---
@@ -40,10 +40,8 @@ Perfect for practicing **frontend development** and creating a **professional po
 Add a screenshot of your project here.
 
 Example:
-
-```
-![Project Preview](images/preview.png)
-```
+(image.png),(image.png)
+![alt text](image-1.png)
 
 ---
 
