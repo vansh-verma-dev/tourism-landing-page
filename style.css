@@ -383,22 +383,25 @@ nav ul li a:hover {
   z-index: -1;
 }
 .hedline h1{
-  padding-left: 40px;
-  padding: 20px;
+  margin-left: 50px;
   font-size: 40px;
   color: white;
 }
 .manali-card-container{
   padding: 10px;
+  padding-left: 60px;
   height: 85%;
- overflow-x: scroll;
+  overflow-x: scroll;
   display: flex;
-  gap: 80px;
-  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+.manali-card-container::-webkit-scrollbar{
+  display:none;
 }
 .manaili-card{
   height: 90%;
-  width: 300px;
+  min-width:300px;
  border-radius: 10px;
   overflow: hidden;
 }
