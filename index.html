@@ -1,169 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing Services</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- -------hero-section--- -->
+    <section class="hero-section">
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <input type="checkbox" id="menu-toggle">
-<label for="menu-toggle" class="menu-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-</label>
-
-        <h2 class="logo">MarketBoostvansh </h2>
+        <!-- ---nav-bar-top--- -->
+      <nav>
+        <div class="logo">
+          <h1>
+            <i class="fa-solid fa-truck-plane"></i> Trip
+            <span style="color: blue">Nova </span>
+          </h1>
+        </div>
         <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#process">Process</a></li>
-            <li><a href="#contact" class="nav-btn">Get Started</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Tours</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Grow Your Business with Digital Marketing</h1>
-            <p>
-                We help businesses increase their online presence,
-                generate leads and boost sales using smart digital strategies.
-            </p>
-            <a href="#contact" class="btn">Start Growing</a>
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
         </div>
-         
-    </section>
+      </nav>
 
-    <!-- Services -->
-    <section class="services" id="services">
-        <h2>Our Services</h2>
-        <p class="sub-text">Everything you need to grow online</p>
-
-        <div class="service-cards">
-            <div class="card">
-                <h3>SEO Optimization</h3>
-                <p>
-                    Improve website ranking on Google and
-                    increase organic traffic.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Social Media Marketing</h3>
-                <p>
-                    Build your brand and engage customers
-                    through social platforms.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Content Marketing</h3>
-                <p>
-                    High-quality content that attracts,
-                    informs and converts users.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Email Marketing</h3>
-                <p>
-                    Targeted email campaigns to increase
-                    customer retention and sales.
-                </p>
-            </div>
+      <!-- ------hero-tittle---- -->
+      <div class="hero-tittle">
+        <div class="hero-details">
+          <h1>Explore The World With TripNova</h1>
+          <p>
+            Discover beautiful destinations, amazing tours, and unforgettable
+            adventures around the world.
+          </p>
+          <div class="btn-group">
+            <a href="#"><button class="explorebtn">Explore Tours</button></a>
+            <a href="#"><button class="vediobtn">Watch Video</button></a>
+          </div>
         </div>
+      </div>
     </section>
-
-    <!-- Why Choose Us -->
-    <section class="why-us">
-        <h2>Why Choose Us?</h2>
-
-        <div class="reasons">
-            <div class="reason">
-                <h3>📈 Result Oriented</h3>
-                <p>We focus on real growth and measurable results.</p>
-            </div>
-
-            <div class="reason">
-                <h3>💡 Creative Strategy</h3>
-                <p>Unique marketing strategies for every business.</p>
-            </div>
-
-            <div class="reason">
-                <h3>🤝 Client Support</h3>
-                <p>Continuous support and performance tracking.</p>
-            </div>
+<div class="line"></div>
+    <!-- -------Tour Card section----- -->
+     <!-- <section class="tours-section">
+        <h1>POPULAR TOURS</h1>
+        <div class="card-container">
+            
         </div>
-    </section>
+     </section> -->
+  </body>
+  <script>
+    const menuBtn = document.querySelector(".menu-btn");
+    const navLinks = document.querySelector("nav ul");
 
-    <!-- Process -->
-    <section class="process" id="process">
-        <h2>How We Work</h2>
-
-        <div class="steps">
-            <div class="step">
-                <span>1</span>
-                <h3>Research</h3>
-                <p>Understanding your business and audience.</p>
-            </div>
-
-            <div class="step">
-                <span>2</span>
-                <h3>Strategy</h3>
-                <p>Creating a custom digital marketing plan.</p>
-            </div>
-
-            <div class="step">
-                <span>3</span>
-                <h3>Execution</h3>
-                <p>Implementing campaigns across platforms.</p>
-            </div>
-
-            <div class="step">
-                <span>4</span>
-                <h3>Growth</h3>
-                <p>Tracking performance and optimizing results.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <h2>What Clients Say</h2>
-
-        <div class="testimonial-box">
-            <div class="testimonial">
-                <p>
-                    "Our online sales increased within just
-                    a few months. Amazing service!"
-                </p>
-                <h4>- Client A</h4>
-            </div>
-
-            <div class="testimonial">
-                <p>
-                    "Professional team with excellent marketing ideas."
-                </p>
-                <h4>- Client B</h4>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta" id="contact">
-        <h2>Ready to Grow Your Business?</h2>
-        <p>Let us help you reach more customers online.</p>
-        <a href="#" class="btn">Contact Now</a>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 MarketBoost | Digital Marketing Services | vansh verma</p>
-    </footer>
-
-</body>
+    menuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
 </html>
