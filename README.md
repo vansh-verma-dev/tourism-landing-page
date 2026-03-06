@@ -40,8 +40,9 @@ link=>  https://landingpage-kfyq.onrender.com
 Add a screenshot of your project here.
 
 Example:
-(image.png),(image.png)
-![alt text](image-1.png)
+![alt text](./assits/exemplae.png)
+![alt text](./assits/image.png)
+![alt text](./assits/image-1.png)
 
 ---
 
