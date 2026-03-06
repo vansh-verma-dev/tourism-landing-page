@@ -85,7 +85,18 @@ nav ul li a:hover {
   color: white;
   cursor: pointer;
 }
-
+nav ul li select{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 19px;
+}
+nav ul li select option{
+  color: black;
+ 
+}
+ 
  /* ---hero - tittle--- */
 
 .hero-tittle {
@@ -350,6 +361,7 @@ nav ul li a:hover {
 }
 .destination-card h1 {
   margin-top: 5px;
+ padding-left: 30px;
   position: absolute;
   top: 0;
   left: 50px;
@@ -381,6 +393,31 @@ nav ul li a:hover {
   color: white;
   background-color: rgba(7, 7, 104, 0.74);
 }
+.international-card:nth-child(1){
+  background: url('https://i.pinimg.com/1200x/65/03/d7/6503d7a41d906f52f99e609dafc32d49.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.international-card:nth-child(2){
+  background: url('https://i.pinimg.com/736x/e1/c0/ba/e1c0ba5d2e8eea9e428c9a78cc65605e.jpg');
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.international-card:nth-child(3){
+  background: url("https://i.pinimg.com/1200x/0a/b4/9b/0ab49b3128d9c9a3edbee748f5867e81.jpg");
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.international-card:nth-child(4){
+  background: url("https://i.pinimg.com/736x/14/49/91/1449912e19dcf44c53f5519990054931.jpg");
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /* ================================================
 -----------------Manali location sections-----------------
 ================================================ */
