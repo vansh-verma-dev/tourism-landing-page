@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.line {
+  height: 5px;
+
+  background-color: gray;
+}
+body {
+  width: 100%;
+  background: url("https://i.pinimg.com/1200x/cf/da/47/cfda47ff676eacb750a1f84c870fdc10.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
+
+/* ================================================
+----------------hero-section-------------
+================================================ */
+
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  background: url("https://i.pinimg.com/1200x/cf/da/47/cfda47ff676eacb750a1f84c870fdc10.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10vh;
+}
+
+/*----NAVBAR------- */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #c7c7c7;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+nav ul li select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 19px;
+}
+nav ul li select option {
+  color: black;
+}
+
+/* ---hero - tittle--- */
+
+.hero-tittle {
+  height: 90%;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px;
+}
+
+.hero-details {
+  width: 100%;
+}
+
+.hero-tittle h1 {
+  font-family: "Lobster Two", cursive;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  font-size: 85px;
+}
+
+.hero-tittle p {
+  font-size: 23px;
+  margin-top: 15px;
+  font-family: "IBM Plex Sans Condensed";
+}
+
+.hero-tittle a .explorebtn {
+  height: 45px;
+  width: 180px;
+  margin-top: 35px;
+  cursor: pointer;
+  border: none;
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+.vediobtn {
+  height: 45px;
+  width: 180px;
+  margin-top: 35px;
+  cursor: pointer;
+  border: none;
+  margin-left: 15px;
+  font-size: 16px;
+  background: transparent;
+
+  color: white;
+}
+.btn-group {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-tittle a button:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
