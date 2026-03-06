@@ -8,12 +8,12 @@ html {
 }
 .line {
   height: 5px;
- 
+
   background-color: gray;
 }
 body {
   width: 100%;
-    background: url("https://i.pinimg.com/1200x/cf/da/47/cfda47ff676eacb750a1f84c870fdc10.jpg");
+  background: url("https://i.pinimg.com/1200x/cf/da/47/cfda47ff676eacb750a1f84c870fdc10.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -48,12 +48,11 @@ nav {
   justify-content: space-between;
   padding: 0 8%;
 
-  background: rgba(0,0,0,0.4); 
+  background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .logo h1 {
@@ -85,19 +84,18 @@ nav ul li a:hover {
   color: white;
   cursor: pointer;
 }
-nav ul li select{
+nav ul li select {
   background-color: transparent;
   border: none;
   outline: none;
   color: white;
   font-size: 19px;
 }
-nav ul li select option{
+nav ul li select option {
   color: black;
- 
 }
- 
- /* ---hero - tittle--- */
+
+/* ---hero - tittle--- */
 
 .hero-tittle {
   height: 90%;
@@ -200,7 +198,7 @@ nav ul li select option{
   padding: 10px;
   justify-content: space-evenly;
 }
-.card-container::-webkit-scrollbar{
+.card-container::-webkit-scrollbar {
   background-color: transparent;
   color: orange;
 }
@@ -219,8 +217,6 @@ nav ul li select option{
   object-fit: cover;
   transition: 0.5s;
 }
-
- 
 
 .card-overlay {
   position: absolute;
@@ -260,8 +256,6 @@ nav ul li select option{
   cursor: pointer;
 }
 
- 
-
 .tour-card:hover video {
   filter: blur(4px);
   transform: scale(1.1);
@@ -277,7 +271,7 @@ nav ul li select option{
 .destinations-section {
   padding-top: 20px;
   position: relative;
-  height: 80vh;
+  height: 85vh;
   width: 100%;
   overflow: hidden;
 }
@@ -321,47 +315,48 @@ nav ul li select option{
   overflow-x: scroll;
   gap: 20px;
   padding-left: 30px;
- 
 }
-.destination-container::-webkit-scrollbar{
-  display:none;
+.destination-container::-webkit-scrollbar {
+  display: none;
 }
 .destination-card {
   background: url("https://i.pinimg.com/1200x/86/03/b8/8603b8c4492bc7b0cdc5c15f453d5474.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   height: 400px;
   min-width: 280px;
+  margin-top: 6px;
   border-radius: 10px;
   overflow: hidden;
   border: 2px solid white;
   position: relative;
- 
+
   margin-left: 20px;
 }
- 
-.destination-card:nth-child(2){
-  background: url('https://i.pinimg.com/736x/6e/8c/2b/6e8c2b51a38acab4fb36be65a7f73b93.jpg');
+
+.destination-card:nth-child(2) {
+  background: url("https://i.pinimg.com/736x/6e/8c/2b/6e8c2b51a38acab4fb36be65a7f73b93.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.destination-card:nth-child(3){
-  background: url('https://i.pinimg.com/736x/a6/74/f4/a674f407d8af1d8987e6599c0e51d5bc.jpg');
+.destination-card:nth-child(3) {
+  background: url("https://i.pinimg.com/736x/a6/74/f4/a674f407d8af1d8987e6599c0e51d5bc.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.destination-card:nth-child(4){
-  background: url('https://i.pinimg.com/736x/ac/65/74/ac6574e76fca7637812412ec4a65811e.jpg');
+.destination-card:nth-child(4) {
+  background: url("https://i.pinimg.com/736x/ac/65/74/ac6574e76fca7637812412ec4a65811e.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .destination-card h1 {
   margin-top: 5px;
- padding-left: 30px;
+  padding-left: 30px;
   position: absolute;
   top: 0;
   left: 50px;
@@ -393,31 +388,34 @@ nav ul li select option{
   color: white;
   background-color: rgba(7, 7, 104, 0.74);
 }
-.international-card:nth-child(1){
-  background: url('https://i.pinimg.com/1200x/65/03/d7/6503d7a41d906f52f99e609dafc32d49.jpg');
+.international-card:nth-child(1) {
+  background: url("https://i.pinimg.com/1200x/65/03/d7/6503d7a41d906f52f99e609dafc32d49.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.international-card:nth-child(2){
-  background: url('https://i.pinimg.com/736x/e1/c0/ba/e1c0ba5d2e8eea9e428c9a78cc65605e.jpg');
-    background-repeat: no-repeat;
+.international-card:nth-child(2) {
+  background: url("https://i.pinimg.com/736x/e1/c0/ba/e1c0ba5d2e8eea9e428c9a78cc65605e.jpg");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.international-card:nth-child(3){
+.international-card:nth-child(3) {
   background: url("https://i.pinimg.com/1200x/0a/b4/9b/0ab49b3128d9c9a3edbee748f5867e81.jpg");
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.international-card:nth-child(4){
+.international-card:nth-child(4) {
   background: url("https://i.pinimg.com/736x/14/49/91/1449912e19dcf44c53f5519990054931.jpg");
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
+.destination-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
 /* ================================================
 -----------------Manali location sections-----------------
 ================================================ */
@@ -425,7 +423,7 @@ nav ul li select option{
   padding-top: 20px;
   position: relative;
   height: 100vh;
- 
+
   overflow: hidden;
 }
 
@@ -441,12 +439,12 @@ nav ul li select option{
   transform: scale(1.1);
   z-index: -1;
 }
-.hedline h1{
+.hedline h1 {
   margin-left: 50px;
   font-size: 40px;
   color: white;
 }
-.manali-card-container{
+.manali-card-container {
   padding: 10px;
   padding-left: 60px;
   height: 85%;
@@ -456,48 +454,48 @@ nav ul li select option{
   gap: 40px;
   align-items: center;
 }
-.manali-card-container::-webkit-scrollbar{
-  display:none;
+.manali-card-container::-webkit-scrollbar {
+  display: none;
 }
-.manaili-card{
+.manaili-card {
   height: 90%;
-  min-width:300px;
- border-radius: 10px;
+  min-width: 300px;
+  border-radius: 10px;
   overflow: hidden;
 }
-.manaili-card img{
+.manaili-card img {
   width: 100%;
   height: 190px;
 }
-.manali-card-tittle{
+.manali-card-tittle {
   padding: 10px;
   color: white;
   background-color: rgba(0, 0, 255, 0.623);
 }
-.manali-card-details{
+.manali-card-details {
   background-color: white;
   padding: 10px;
   padding-bottom: 15px;
 }
-.manali-card-details span{
+.manali-card-details span {
   display: flex;
   font-size: 20px;
   justify-content: space-between;
 }
-.manali-card-details span select{
+.manali-card-details span select {
   height: 30px;
   width: 120px;
   margin-bottom: 10px;
 }
-.Price{
+.Price {
   display: flex;
   font-size: 22px;
   font-weight: 300;
 }
-.Price i{
+.Price i {
   font-size: 19px;
 }
-#bookNowBtn{
+#bookNowBtn {
   margin-top: 10px;
   color: white;
   background-color: rgb(18, 18, 90);
@@ -531,21 +529,21 @@ nav ul li select option{
   z-index: -1;
 }
 
-.footer-head{
+.footer-head {
   padding: 20px;
 }
-.footer-head h1{
+.footer-head h1 {
   padding-left: 50px;
   color: white;
   font-size: 40px;
   margin-bottom: 10px;
 }
-.footer-head p{
+.footer-head p {
   padding-left: 50px;
   font-size: 20px;
   color: white;
 }
-footer{
+footer {
   padding: 10px;
   width: 100%;
   height: 65%;
@@ -553,56 +551,55 @@ footer{
   display: flex;
   justify-content: space-evenly;
 }
-.links{
+.links {
   width: 22vw;
 }
 .links h1,
-.subscripe h1{
+.subscripe h1 {
   font-size: 22px;
   color: white;
   margin-bottom: 10px;
 }
-.links ul li{
- padding-left: 10px;
- padding-top: 7px;
+.links ul li {
+  padding-left: 10px;
+  padding-top: 7px;
   list-style: none;
 }
-.links ul li a{
+.links ul li a {
   color: white;
   font-size: 16px;
   text-decoration: none;
   transition: all 0.3s ease;
-
 }
-.links ul li a:hover{
+.links ul li a:hover {
   padding-left: 15px;
 }
-.subscripe p{
+.subscripe p {
   font-size: 14px;
   color: white;
 }
-.input-box{
+.input-box {
   overflow: hidden;
   margin-top: 10px;
   height: 40px;
   background-color: white;
 }
-.input-box input{
+.input-box input {
   border: none;
   padding: 5px;
   height: 100%;
   width: 70%;
- background-color: white;
+  background-color: white;
 }
-.input-box button{
+.input-box button {
   background-color: blue;
   height: 100%;
- width: 76px;
- color: white;
- border: none;
- cursor: pointer;
+  width: 76px;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
-.social-link{
+.social-link {
   height: 10vh;
 }
 .social-link ul {
@@ -610,24 +607,23 @@ footer{
   margin-top: 20px;
   display: flex;
 }
-.social-link ul li a{
+.social-link ul li a {
   font-size: 30px;
   margin-left: 6px;
   border-radius: 5px;
- color: white;
+  color: white;
   background-color: black;
   padding: 5px;
   /* transition: all 0.2s ease-in; */
   transition: 0.3s;
 }
- 
-.social-link ul li a:hover{
- color: #00d9ff;
- transform: translateY(-4px);
 
+.social-link ul li a:hover {
+  color: #00d9ff;
+  transform: translateY(-4px);
 }
-.copy-footer{
-  border-top: 1px solid rbg(225,225,255,0.2);
+.copy-footer {
+  border-top: 1px solid rbg(225, 225, 255, 0.2);
   height: 7vh;
   background-color: rgba(0, 0, 0, 0.63);
   color: white;
@@ -635,13 +631,12 @@ footer{
   justify-content: space-around;
   align-items: center;
   padding: 10px;
- 
 }
-.privacy-links{
+.privacy-links {
   display: flex;
   gap: 10px;
 }
-.copy-footer a{
+.copy-footer a {
   color: white;
   margin-left: 10px;
 }
@@ -706,91 +701,128 @@ footer{
     width: 130px;
   }
   .destination-container {
- margin-left: 5px;
-}
-.tours-section{
-height: 70vh;
-padding: 10px;
-}
-.destinations-section{
-  height: 70vh;
-}
-.destination-container{
-  margin-top: 40px;
-  width: 100%;
-}
-.destination-header h2 {
-  font-size: 27px;
+    margin-left: 5px;
+  }
+  .tours-section {
+    height: 70vh;
+    padding: 10px;
+  }
+  .destinations-section {
+    height: 70vh;
+  }
+  .destination-container {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .destination-header h2 {
+    font-size: 27px;
+  }
+
+  .destination-header p {
+    font-size: 13px;
+  }
+  .Manali-top-location {
+    height: 80vh;
+  }
+  footer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .links {
+    width: 45%;
+  }
+
+  .subscripe {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .footer-head h1 {
+    font-size: 32px;
+    padding-left: 20px;
+  }
+
+  .footer-head p {
+    padding-left: 20px;
+    font-size: 16px;
+  }
+
+  .copy-footer {
+    flex-direction: column;
+    gap: 5px;
+    height: auto;
+  }
 }
 
-.destination-header p {
-  font-size: 13px;
-}
-.Manali-top-location{
-  height: 80vh;
-}
-footer{
-flex-wrap: wrap;
-justify-content: space-between;
+@media (max-width: 500px) {
+  footer {
+    padding-left: 20px;
+  }
+  .links {
+    width: 100%;
+  }
+  .links h1 {
+    margin-top: 30px;
+  }
+
+  .social-link ul {
+    margin-top: 10px;
+    justify-content: start;
+  }
+
+  .input-box input {
+    width: 65%;
+  }
+  .input-box {
+    background-color: blue;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .input-box input {
+    width: 70%;
+  }
+  .input-box button {
+    background-color: transparent;
+    width: 28%;
+  }
 }
 
-.links{
-width: 45%;
+.contact-menu {
+  position: fixed;
+  bottom: 50px;
+  left: 0;
 }
 
-.subscripe{
-width: 100%;
-margin-top: 20px;
+.contact-menu a{
+  text-decoration: none;
 }
 
-.footer-head h1{
-font-size: 32px;
-padding-left: 20px;
+.contact-btn {
+  color: white;
+  background-color: orangered;
+
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  margin-top: 5px;
+  width: 50px;
+  font-size: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+  transition: 0.4s;
 }
 
-.footer-head p{
-padding-left: 20px;
-font-size: 16px;
+.contact-btn i{
+  font-size: 24px;
 }
-
-.copy-footer{
-flex-direction: column;
-gap: 5px;
-height: auto;
+.contact-btn span:hover{
+  opacity: 1;
 }
- 
-}
-
-@media (max-width: 500px){
- footer{
- padding-left: 20px;
- }
-.links{
-width: 100%;
-}
-.links h1{
-  margin-top: 30px;
-}
-
-.social-link ul{
-  margin-top: 10px;
-justify-content: start;
-}
-
-.input-box input{
-width: 65%;
-}
-.input-box{
- background-color: blue;
- margin-top: 20px;
- margin-bottom: 30px;
-}
-.input-box input{
-  width: 70%;
-}
-.input-box button{
-  background-color: transparent;
-width: 28%;
-}
-
-}
+.contact-btn:hover{
+  width: 160px;
+  gap: 10px;
+} 
