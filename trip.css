@@ -15,46 +15,86 @@ body {
 .main{
   height: 100vh;
   width: 100%;
-  background: url("https://i.pinimg.com/1200x/cf/da/47/cfda47ff676eacb750a1f84c870fdc10.jpg");
+  background:  url("https://i.pinimg.com/736x/21/f5/71/21f571579df9f7aeda51a04c3f5e3c74.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+ 
 }
-
 .destination-details{
-  height: 100%;
   width: 100%;
-  color: white;
+  height: 90%;
+  background-color: rgba(0, 0, 0, 0.50);
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(10px);
+}
+.tittle{
+  padding-top: 35%;
+  padding-left: 40px;
+  width: 70%;
+  height: 100%;
+  text-align: left;
+  align-items: center;
+}
+.tittle h1{
+  font-size: 6rem;
+  color: white;
+}
+.tittle p{
+  font-size: 1.4rem;
+  color: white;
 }
 .destination-ads{
-  border: 10px solid white;
-  width: 40vw;
-  height: 97%;
+  height: 60vh;
+  width: 60%;
+  padding-right: 20px;
+  overflow: hidden;
+margin-left: 10px;
 }
-.destination-ads img{
-  height: 100%;
-  width: 100%;
+.destination-ads  img{
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+height: 100%;
+width: 100%;
 }
-.destination-tittles{
-  width: 60vw;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.336);
+.booking-nav{
+  background-color:gray;
+  padding: 10px;
+  width: 80%;
+  height: 10vh;
+  border-radius: 20px;
+  justify-content: center;
+  margin-left: 10%;
+
+display: flex;
+gap: 30px;
+justify-content: left;
+align-items: center;
+padding-left: 20px;
+
+  position: absolute;
+  bottom: 20px;
+  left: 0%;
 }
-.destination-tittles h1{
-  margin-top: 20px;
-  font-size: 40px;
-  text-align: left;
-  padding-left: 40px;
+.booking-nav h2{
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
 }
-#subheading{
-  font-size: 18px;
-  text-align: left;
-  padding-left: 45px;
+.booking-nav .links{
+  display: flex;
+  gap: 20px;
+  border: 2px solid rgb(110, 110, 110);
+ border-radius: 20px;
+  padding: 20px;
+}
+.booking-nav .links li{
+  list-style: none;
+}
+.booking-nav .links li a{
+  color: white;
+font-size: 22px;
+text-decoration: none;
 }
