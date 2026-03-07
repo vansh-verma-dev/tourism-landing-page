@@ -34,13 +34,13 @@ body {
   -webkit-backdrop-filter: blur(10px);
 }
 .destination-ads{
-  width: 40vw;
+  border: 10px solid white;
+  width: 35vw;
+  height: 95%;
+}
+.destination-ads img{
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.336);
-  background: url("https://i.pinimg.com/736x/95/16/05/9516059d0b57c5210fe69165830075ec.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  width: 100%;
 }
 .destination-tittles{
   width: 60vw;
