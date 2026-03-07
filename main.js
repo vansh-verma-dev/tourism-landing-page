@@ -1,6 +1,11 @@
 let heading = document.getElementById("destination-heding");
+let rishikeshbtn = document.getElementById('rishikeshbokkingBtn');
 
-let destinations = {
+
+
+
+rishikeshbtn.addEventListener('click',()=>{
+  let destinations = {
   rishikesh: {
     heading: "Explore Rishekesh",
     subheading:"Adventure capital of India. Experience river rafting, temples and mountains",
@@ -10,4 +15,17 @@ let destinations = {
     subheading:"Adventure capital of India. Experience river rafting, temples and mountains",
   }
 };
-heading.innerHTML = destinations.rishikesh.heading;
+  window.location = "tripbook.html";
+ heading.innerHTML = destinations.rishikesh.heading;
+})
+
+
+
+
+
+  const menuBtn = document.querySelector(".menu-btn");
+  const navLinks = document.querySelector("nav ul");
+
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
