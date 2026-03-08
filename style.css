@@ -388,6 +388,10 @@ nav ul li select option {
   color: white;
   background-color: rgba(7, 7, 104, 0.74);
 }
+.card-foot button:hover{
+  background-color: rgb(6, 6, 80);
+  cursor: pointer;
+}
 .international-card:nth-child(1) {
   background: url("https://i.pinimg.com/1200x/65/03/d7/6503d7a41d906f52f99e609dafc32d49.jpg");
   background-repeat: no-repeat;
