@@ -184,10 +184,11 @@ nav ul li select option {
   z-index: -1;
 }
 .tours-section h1 {
-  color: rgb(94, 94, 94);
+  color: white;
+  text-shadow: 10px 10px 14px rgb(0, 0, 0);
   margin-top: 10px;
   font-size: 40px;
-  font-family: "Ubuntu";
+  font-family: "Lobster Two Static";
   text-align: center;
 }
 .card-container {
@@ -296,9 +297,12 @@ nav ul li select option {
 }
 
 .destination-header h2 {
-  font-size: 42px;
-  font-weight: 600;
+  color: white;
+  font-size: 40px;
+  font-family:"Dancing Script", cursive;
+  font-weight: 900;
   color: rgb(48, 48, 48);
+ 
 }
 
 .destination-header p {
@@ -447,6 +451,7 @@ nav ul li select option {
   margin-left: 50px;
   font-size: 40px;
   color: white;
+  font-family:"Dancing Script", cursive;
 }
 .manali-card-container {
   padding: 10px;
@@ -466,6 +471,7 @@ nav ul li select option {
   min-width: 300px;
   border-radius: 10px;
   overflow: hidden;
+ box-shadow: 8px 9px 20px black;
 }
 .manaili-card img {
   width: 100%;
@@ -479,7 +485,7 @@ nav ul li select option {
 .manali-card-details {
   background-color: white;
   padding: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 35px;
 }
 .manali-card-details span {
   display: flex;
@@ -508,110 +514,321 @@ nav ul li select option {
   width: 100%;
   height: 40px;
 }
+
+/* ================================================================================
+-------------------------------riview-section----------------------------------
+================================================================================= */
+
+.review-section{
+  border-top: 5px solid gray;
+ padding: 20px;
+  background:
+  linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+  url("https://i.pinimg.com/1200x/f1/8a/41/f18a415b4ec110e784e302eefe7d8d25.jpg");
+  background-size:cover;
+  background-position:center;
+}
+
+.review-heading{
+  text-align:center;
+  color:white;
+ margin-bottom: 20px;
+}
+
+.review-heading h1{
+  font-size:48px;
+  font-family: "Dancing Script", cursive;
+}
+
+.review-heading p{
+  font-size:15px;
+  opacity:0.8;
+}
+
+/* scroll row */
+
+.review-row{
+  display:flex;
+  justify-content: center;
+  gap:30px;
+  overflow-x:auto;
+  padding:20px 40px;
+  scroll-behavior:smooth;
+}
+
+.review-row::-webkit-scrollbar{
+  display:none;
+}
+
+/* cards */
+
+.review-card{
+  min-width:260px;
+  max-width:260px;
+  padding:25px;
+  border-radius:20px;
+
+  background:rgba(255,255,255,0.1);
+  backdrop-filter:blur(10px);
+
+  color:white;
+  text-align:center;
+
+  transition:0.3s;
+}
+
+.review-card:hover{
+  transform:translateY(-10px);
+}
+
+/* image */
+
+.review-card img{
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:10px;
+}
+
+/* name */
+
+.review-card h3{
+  font-size:18px;
+}
+
+/* location */
+
+.review-card span{
+  font-size:13px;
+  opacity:0.8;
+}
+
+/* stars */
+
+.stars{
+  color:gold;
+  margin:6px 0;
+}
+
+/* text */
+
+.review-card p{
+  font-size:13px;
+  line-height:1.6;
+}
+
+/* responsive */
+
+@media(max-width:768px){
+
+.review-heading h1{
+  font-size:32px;
+}
+
+.review-row{
+  padding:20px;
+}
+
+.review-card{
+  min-width:220px;
+}
+
+}
 /* =============================================
 -------------contact -section----------------
 ============================================= */
-.contact-section{
-  height: 90vh;
-  width: 100%;
-  overflow: hidden;
 
-  background: url("https://i.pinimg.com/1200x/aa/ea/bb/aaeabb001980e3cb8c52af0fe8d5af9e.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.contact-section{
+  min-height:90vh;
+  width:100%;
+  overflow:hidden;
+
+  background:url("https://i.pinimg.com/1200x/cf/da/47/cfda47ff676eacb750a1f84c870fdc10.jpg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+
+  border-top:3px solid gray;
+  border-bottom:3px solid gray;
 }
+
+/* heading */
+
 .conatc-heading{
-  padding: 5px;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.774);
+  padding:10px;
+  width:100%;
+  text-align:center;
+  color:white;
+  background-color:rgba(0,0,0,0.85);
 }
+
 .conatc-heading h1{
-  font-size: 50px;
+  font-size:50px;
+  font-family:"Dancing Script", cursive;
 }
+
 .conatc-heading p{
-  font-size: 15px;
+  font-size:15px;
 }
+
+/* container */
+
 .contact-container{
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.774);
-  display: flex;
-  justify-content: center;
+  width:100%;
+  min-height:80vh;
+  background-color:rgba(0,0,0,0.85);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:40px;
+
+  padding:30px;
 }
+
+/* left side */
+
 .left-side{
-width:50%;
-height:85%;
-padding: 20px;
-display:flex;
-align-items:center;
-justify-content:center;
+  width:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .contact-slider{
-width:100%;
-height:100%;
-position:relative;
-overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,0.5);
+  width:100%;
+  height:400px;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
 }
-
- 
 
 .contact-slider img{
-position:absolute;
-width:100%;
-height:100%;
-object-fit:cover;
-margin-bottom:30px;
-border-top-left-radius: 20px;
-border-bottom-right-radius: 20px;
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
 
-opacity:0;
-transition:opacity 1s ease;
+  border-top-left-radius:20px;
+  border-bottom-right-radius:20px;
+
+  opacity:0;
+  transition:opacity 1s ease;
 }
-.contact-slider:hover{
-  box-shadow: 9px 5px 35px rgba(128, 128, 128, 0.315);
-}
- 
 
 .contact-slider img.active{
-opacity:1;
+  opacity:1;
 }
-.right-side{
-  width: 50%;
-  height: 100%;
- 
-}
-.right-side form{
-  width: 100%;
-  height: 100%;
-  padding: 40px;
-}
-.right-side form input{
-  width: 90%;
-  height: 40px;
-  margin: 10px;
-  padding: 10px;
-}
-.right-side form textarea{
-  width: 90%;
-  margin: 10px;
-  padding: 10px;
-}
-.right-side form button{
-  width: 90%;
-  height: 40px;
-  margin: 10px;
-  cursor: pointer;
-  border: none;
-  background-color: rgb(0, 157, 255);
-  color: white;
 
-  border-radius: 10px;
+.contact-slider:hover{
+  box-shadow:9px 5px 35px rgba(128,128,128,0.3);
+}
+
+/* right side */
+
+.right-side{
+  width:50%;
+}
+
+.right-side form{
+  width:100%;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* inputs */
+
+.right-side form input{
+  width:100%;
+  max-width:400px;
+  height:40px;
+  margin:10px 0;
+  padding:10px;
+  border:none;
+  border-radius:6px;
+  color: white;
+  border-bottom: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.664);
+}
+
+.right-side form textarea{
+  width:100%;
+  max-width:400px;
+  margin:10px 0;
+  padding:10px;
+  color: white;
+  background-color: black;
+    border-bottom: 2px solid white;
+  border:none;
+  border-radius:6px;
+}
+
+.right-side form button{
+  width:100%;
+  max-width:400px;
+  height:40px;
+  margin:10px 0;
+  cursor:pointer;
+  border:none;
+
+  background-color:rgb(0,157,255);
+  color:white;
+  border-radius:10px;
+
+  transition:0.3s;
+}
+
+.right-side form button:hover{
+  background-color:rgb(0,120,200);
+}
+
+/* =====================================
+Responsive
+===================================== */
+
+@media (max-width:900px){
+
+.contact-container{
+  flex-direction:column;
+}
+
+.left-side{
+  width:100%;
+}
+
+.right-side{
+  width:100%;
+}
+
+.contact-slider{
+  height:300px;
+}
+
+.conatc-heading h1{
+  font-size:36px;
+}
+
+}
+
+/* small mobile */
+
+@media (max-width:500px){
+
+.contact-slider{
+  height:250px;
+}
+
+.conatc-heading h1{
+  font-size:28px;
+}
+
+.conatc-heading p{
+  font-size:13px;
+}
+
 }
 /* ================================================
 -----------------Footer sections-----------------
@@ -754,6 +971,9 @@ footer {
 ================================================ */
 
 @media (max-width: 900px) {
+  .hero-section{
+    height: 70vh;
+  }
   .hero-tittle h1 {
     font-size: 35px;
   }
@@ -766,7 +986,11 @@ footer {
 /* ================================================
 -----------------Mobile responsive desgin-----------------
 ================================================ */
-
+.tours-section p{
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
 @media (max-width: 700px) {
   .menu-btn {
     display: block;
@@ -799,7 +1023,14 @@ footer {
   .hero-tittle p {
     font-size: 13px;
   }
-
+.tours-section h1{
+  font-size: 26px;
+  font-family: "Dancing Script";
+}
+.tours-section p{
+  font-size: 14px;
+  margin-bottom: 30px;
+}
   .explorebtn {
     width: 130px;
     height: 40px;
