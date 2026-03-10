@@ -162,3 +162,27 @@ if (menuBtn) {
     navLinks.classList.toggle("active");
   });
 }
+
+const images = document.querySelectorAll(".contact-slider img");
+
+let index = 0;
+
+function changeImage(){
+
+images.forEach((img)=>{
+img.classList.remove("active");
+});
+
+images[index].classList.add("active");
+
+index++;
+
+if(index === images.length){
+index = 0;
+}
+
+}
+
+setInterval(changeImage,3000);
+
+changeImage();

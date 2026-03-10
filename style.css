@@ -542,71 +542,44 @@ nav ul li select option {
   display: flex;
   justify-content: center;
 }
- 
-
 .left-side{
 width:50%;
-height:100%;
+height:85%;
+padding: 20px;
 display:flex;
 align-items:center;
 justify-content:center;
 }
 
+.contact-slider{
+width:100%;
+height:100%;
+position:relative;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
 
  
 
-.contact-slider{
-
-width:100%;
-height:100%;
-overflow:hidden;
-border-radius:20px;
-
-box-shadow:0 10px 30px rgba(0,0,0,0.5);
-
-}
-.contact-slider{
-
-display:flex;
-width:400%;
-height:100%;
-
-animation:slider 16s infinite;
-
-}
 .contact-slider img{
-
+position:absolute;
 width:100%;
 height:100%;
 object-fit:cover;
+margin-bottom:30px;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
 
+opacity:0;
+transition:opacity 1s ease;
 }
-
-
-/* ANIMATION */
-
-@keyframes slider{
-
-0%{
-transform:translateX(0);
+.contact-slider:hover{
+  box-shadow: 9px 5px 35px rgba(128, 128, 128, 0.315);
 }
+ 
 
-25%{
-transform:translateX(-100%);
-}
-
-50%{
-transform:translateX(-200%);
-}
-
-75%{
-transform:translateX(-300%);
-}
-
-100%{
-transform:translateX(0);
-}
-
+.contact-slider img.active{
+opacity:1;
 }
 .right-side{
   width: 50%;
