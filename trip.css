@@ -189,3 +189,65 @@ body {
 .fastival-table li h2 p{
   font-size: 15px;
 }
+
+.trips-details{
+  overflow: hidden;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.781);
+  height: auto;
+  width: 100%;
+ 
+}
+.detsils{
+  padding: 20px;
+}
+.detsils h1{
+  font-size: 40px;
+}
+.trip-highlights{
+  display: flex;
+  gap: 50px;
+ margin-top: 40px;
+}
+.trips-details ul p{
+  font-size: 28px;
+}
+.fa-check{
+  color: green;
+}
+.fa-xmark{
+  color: red;
+}
+.fa-calendar-check{
+  color: goldenrod;
+}
+.fa-calendar-xmark{
+  color: orangered;
+}
+.trips-details ul li{
+  list-style: none;
+ margin: 10px;
+ font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.trips-details ul li:hover{
+  margin-left: 15px;
+  color: rgb(255, 174, 0);
+}
+
+.trip-book-card{
+ margin: 20px;
+ width: 800px;
+  height: 600px;
+  background-color: red;
+}
+
+.trips-details{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+
