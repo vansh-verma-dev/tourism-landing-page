@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Payment </title>
+    <link rel="stylesheet" href="trip.css">
+</head>
+<body>
+    <section class="booking-section">
+
+<div class="booking-container">
+
+<!-- progress steps -->
+
+<div class="steps">
+
+<div class="step active">1. Traveler Info</div>
+<div class="step">2. Trip Details</div>
+<div class="step">3. Review</div>
+<div class="step">4. Payment</div>
+
+</div>
+
+<!-- STEP 1 -->
+
+<div class="form-step active">
+
+<h2>Traveler Details</h2>
+<p>Enter your information below.</p>
+
+<input type="text" placeholder="Full Name">
+<input type="email" placeholder="Email">
+<input type="tel" placeholder="Phone Number">
+<input type="text" placeholder="City">
+
+<button class="next-btn">Next</button>
+
+</div>
+
+
+<!-- STEP 2 -->
+
+<div class="form-step">
+
+<h2>Trip Details</h2>
+
+<input type="date">
+<input type="number" placeholder="Travelers">
+<textarea placeholder="Special Request"></textarea>
+
+<button class="next-btn">Next</button>
+
+</div>
+
+
+<!-- STEP 3 -->
+
+<div class="form-step">
+
+<h2>Review Trip</h2>
+
+<p>Destination : Rishikesh</p>
+<p>Travelers : 2</p>
+<p>Total Price : ₹19,996</p>
+
+<button class="next-btn">Proceed to Payment</button>
+
+</div>
+
+
+<!-- STEP 4 -->
+
+<div class="form-step">
+
+<h2>Payment</h2>
+
+<div class="payment-methods">
+
+<button>Pay with UPI</button>
+<button>Credit / Debit Card</button>
+<button>Net Banking</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+</body>
+<script src="JS/payemt.js"></script>
+</html>
