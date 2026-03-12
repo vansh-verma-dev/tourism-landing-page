@@ -186,3 +186,6 @@ index = 0;
 setInterval(changeImage,3000);
 
 changeImage();
+
+
+// ===========================================
